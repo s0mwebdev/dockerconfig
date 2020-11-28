@@ -19,11 +19,11 @@ services:
   directus:
     image: directus/directus:v8-apache
     ports:
-      - "80:80"
+      - "8080:80"
     environment:
       DIRECTUS_APP_ENV: "production"
-      DIRECTUS_AUTH_PUBLICKEY: "some good random secret"
-      DIRECTUS_AUTH_SECRETKEY: "another very good random secret"
+      DIRECTUS_AUTH_PUBLICKEY: "some random secret"
+      DIRECTUS_AUTH_SECRETKEY: "another random secret"
       DIRECTUS_DATABASE_HOST: "mysql"
       DIRECTUS_DATABASE_PORT: "3306"
       DIRECTUS_DATABASE_NAME: "directus"
